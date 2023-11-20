@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PizzaStore
 {
-    public abstract class User
+    public class User
     {
         
         protected string _name;

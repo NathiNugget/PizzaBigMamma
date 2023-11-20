@@ -21,6 +21,9 @@ namespace PizzaStore
 
         public int Price { get { return _price; } set { _price = value; } }
         public string Name { get { return _name; } }
+
+        public string Description { get { return _description; } set { _description = value;  } }
+        
         public List<Topping> ToppingList { get { return _toppingList; } set { _toppingList = value;} }
 
         public override string ToString()
@@ -30,7 +33,7 @@ namespace PizzaStore
             {
                 _toppingPrice += 5; 
             }
-            return $"Name: {_name} Description: {_description} Price: {_price} + topping: {_toppingPrice}"; 
+            return $"~ Name: {_name} ~~ Description: {_description} ~~~ Price: {_price} + topping: {_toppingPrice}"; 
         }
     }
 }
